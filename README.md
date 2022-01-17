@@ -1,6 +1,6 @@
 # Unit Testing Introduction
 
-The `PrimeService` example is included in this repo. This will open in Visual Studio. 
+A small example built on a subset of the previous `Geometry` example is included in this repo. This will open in Visual Studio (**not** VS.Code). 
 
 ### VS.Code
 
