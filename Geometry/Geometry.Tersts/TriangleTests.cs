@@ -15,10 +15,14 @@ namespace Geometry.Tersts
         }
 
         [TestMethod]
-        public void TestInvalid1()
+        [DataRow(20, 2, 2, false)]
+        [DataRow(2, 20, 2, false)]
+        [DataRow(2, 2, 20, false)]
+        [DataRow(2, 2, 2, true)]
+        public void TestInvalid(int a, int b, int c, bool ev)
         {
-            Triangle t = new Triangle(20, 2, 2);
-            Assert.IsFalse(t.IsValid);
+            Triangle t = new Triangle(a, b, c);
+            Assert.AreEqual(ev, t.IsValid);
         }
 
     }
